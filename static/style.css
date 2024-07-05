@@ -1,0 +1,82 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    padding: 1em;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    transition: top 0.5s;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.nav.scrolled {
+    top: -100px; /* hide the navbar when scrolled up */
+}
+
+.nav.scrolled.show {
+    top: 0; /* show the navbar when scrolled up and user reaches top */
+}
+
+.logo {
+    margin-right: 50px;
+}
+
+.logo img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav-middle {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.nav-middle ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-right {
+    margin-left: 50px;
+}
+
+.nav-right ul {
+    display: flex;
+    justify-content: space-between;
+}
+.welcome{
+    width: 70%;
+    margin: 2% auto;
+    padding-top: 100px;
+}
+.welcome h1{
+    text-align: center;
+    font-size: xx-large;
+}
+.punch-line{
+    width: 70%;
+    margin: 5% auto;
+    font-size: x-large;
+}

@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+    <title>Nimbus Consultancy</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <!-- Left section -->
+            <li class="logo">
+                <a href="{% url 'home' %}">
+                    <img src="{% static 'logo.png' %}" alt="Logo">
+                </a>
+            </li>
+    
+            <!-- Middle section -->
+            <li class="nav-middle">
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'about' %}">About</a></li>
+                    <li><a href="{% url 'services' %}">Services</a></li>
+                    <li><a href="{% url 'contact' %}">Contact</a></li>
+                </ul>
+            </li>
+    
+            <!-- Right section -->
+            <li class="nav-right">
+                <ul>
+                    <li><a href="{% url 'login' %}">Log in</a></li>
+                    <li><a href="{% url 'signup' %}">Sign up</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <section class="welcome">
+        <h1>Hello !</h1>
+        <p>Welcome to Nimbus Consultancy, we provide best Sustainable Data and AI solutions.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio, perspiciatis suscipit, debitis eos ipsa expedita beatae aliquam quidem eaque voluptatibus fugit esse ratione dolore facilis deserunt hic quod repudiandae reiciendis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.</p>
+
+      </section>
+      <section class="punch-line">
+        <h3>Get the Continuou supports</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quas.</p>
+      </section>
+      <div class="usp">
+        <h2>Why US:</h2>
+        <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui suscipit inventore illum officiis similique iure quasi sed odio ad nesciunt perspiciatis voluptas, neque rerum perferendis sint reiciendis. Et, doloremque.</li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate dicta voluptatibus laborum placeat unde? Perferendis molestiae vitae repellendus animi repellat molestias voluptas minus ea corporis, libero, magni natus architecto. Magni.</li>
+            <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga tempora veniam suscipit repudiandae dolorem doloremque harum eum itaque molestias ducimus cumque id, numquam autem atque praesentium quae sit necessitatibus culpa?</li>
+        </ul>
+      </div>
+      <div class="testimonials">
+        <h2>Testimonials</h2>
+        <div class="testimonials-01">
+            <h3>Alice Martin</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem sunt dolore fuga maxime dicta accusamus fugit rerum architecto, assumenda ipsa quisquam incidunt minus saepe quis, perferendis voluptas optio magnam!</p>
+        </div>
+        <div class="testimonials-02">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde autem sunt dolore fuga</p>
+        </div>
+      </div>
+      <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com/">Facebook</a>
+            <a href="https://www.instagram.com/">Instagram</a>
+            <a href="https://www.twitter.com/">Twitter</a>
+            <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+        <p>Copyright &copy; 2021 Nimbus Consultancy</p>
+      </footer>
+</body>
+</html>
